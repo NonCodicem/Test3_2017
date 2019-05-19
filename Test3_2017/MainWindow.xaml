@@ -1,0 +1,44 @@
+﻿<Window x:Class="Test3_2017.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test3_2017"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Save As" Click="SaveAsMenuItem_Click"/>
+
+            </MenuItem>
+         </Menu>
+     
+        <Grid>
+        <Label x:Name="lblBussen" Content="Bussen" HorizontalAlignment="Left" Margin="17,25,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstBussen" HorizontalAlignment="Left" Height="129" Margin="17,65,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="lstBussen_SelectionChanged"/>
+        <Label x:Name="lblChauffeurs" Content="Chauffeurs" HorizontalAlignment="Left" Margin="179,33,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstC" HorizontalAlignment="Left" Height="129" Margin="179,65,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="lblGidsen" Content="Gidsen" HorizontalAlignment="Left" Margin="410,33,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstG" HorizontalAlignment="Left" Height="129" Margin="410,65,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="btnChauffeurs" Content="+" HorizontalAlignment="Left" Margin="179,199,0,0" VerticalAlignment="Top" Width="25" Click="btnChauffeurs_Click"/>
+        <Button x:Name="btnGidsen" Content="+" HorizontalAlignment="Left" Margin="410,205,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.409,0.167"/>
+        <Label x:Name="lblReizigers" Content="Reizigers" HorizontalAlignment="Left" Margin="179,242,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstR" HorizontalAlignment="Left" Height="106" Margin="179,273,0,0" VerticalAlignment="Top" Width="178" SelectionChanged="lstR_SelectionChanged"/>
+        <Button x:Name="btnReizigers" Content="+" HorizontalAlignment="Left" Margin="179,384,0,0" VerticalAlignment="Top" Width="25"/>
+        <Label x:Name="lblMedereizigers" Content="Medereizigers" HorizontalAlignment="Left" Margin="410,237,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstM" HorizontalAlignment="Left" Height="106" Margin="410,268,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="btnMedereizigers" Content="+" HorizontalAlignment="Left" Margin="410,383,0,0" VerticalAlignment="Top" Width="22" Click="btnMedereizigers_Click"/>
+        <Label x:Name="lblNaa" Content="Naam" HorizontalAlignment="Left" Margin="17,273,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="23" Margin="78,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="lblGeslacht" Content="Geslacht" HorizontalAlignment="Left" Margin="17,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.096,0.359"/>
+        <TextBox x:Name="txtGeslacht" HorizontalAlignment="Left" Height="23" Margin="78,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="lblTaal" Content="Taal" HorizontalAlignment="Left" Margin="17,353,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTaal" HorizontalAlignment="Left" Height="23" Margin="78,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <Label x:Name="lblTelefoon" Content="Telefoon" HorizontalAlignment="Left" Margin="17,382,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelefoon" HorizontalAlignment="Left" Height="23" Margin="78,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="17,199,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
+
+    </Grid>
+    </DockPanel>
+</Window>
